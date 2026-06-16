@@ -1,0 +1,19 @@
+.container {
+    position: relative;
+    display: block;
+    font-family: system-ui, -apple-system, sans-serif;
+    width: 100%;
+}
+
+.dropdown {
+    position: absolute;
+    top: calc(100% + 4px);
+    left: 0;
+    min-width: 260px;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    z-index: 1000;
+    padding: 12px;
+}

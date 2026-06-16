@@ -1,0 +1,53 @@
+.weekdays,
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.weekdays div {
+    width: 32px;
+    text-align: center;
+    font-size: 12px;
+    color: #666;
+    font-weight: 600;
+    margin-bottom: 4px;
+}
+
+.cell {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background: none;
+    border-radius: 50%;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.cell:not(.empty):hover {
+    background-color: #f0f0f0;
+}
+
+.cell:disabled {
+    color: #ccc;
+    cursor: not-allowed;
+}
+
+.cell:disabled:hover {
+    background-color: transparent;
+}
+
+.cell.today {
+    font-weight: bold;
+    color: #0066ff;
+    background-color: #f0f6ff;
+    border: 1px solid #0066ff;
+}
+
+.cell.selected {
+    background-color: #0066ff;
+    color: white;
+    border: 1px solid #0066ff;
+}
