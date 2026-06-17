@@ -1,6 +1,6 @@
 {
-  "name": "custom-datepicker",
-  "private": true,
+  "name": "@david.eross3/custom-datepicker",
+  "private": false,
   "version": "1.0.0",
   "type": "module",
   "main": "./dist/index.umd.js",
@@ -16,6 +16,12 @@
     "build": "vite build",
     "test": "vitest",
     "test:ui": "vitest --ui"
+  },
+  "files": [
+    "dist"
+  ],
+  "publishConfig": {
+    "access": "public"
   },
   "dependencies": {
     "react": "^19.2.6",
